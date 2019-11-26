@@ -14,9 +14,9 @@ function analyze() {
       var response = JSON.parse(e.target.responseText);
       if (response["result"] == "1") {
         el("result-label").innerHTML = `This text belongs to comp.graphics`;
-      else if (response["result"] == "7") {
+      } else if (response["result"] == "7") {
         el("result-label").innerHTML = `This text belongs to rec.autos`;
-      else {
+      } else {
         el("result-label").innerHTML = `${response["result"]}`;
       }
     }
